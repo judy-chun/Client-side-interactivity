@@ -12,6 +12,7 @@ function initializePage() {
 	$("#testjs").click(function(e) {
 		$('.jumbotron h1').text("Ask your own heart.");
 		$("#testjs").text("Please Wait...");
+		$("testjs").addClass("active");
 		$("#testjs").toggleClass("active");
 	});
 	$("a.thumbnail").click(projectClick);
@@ -29,6 +30,7 @@ function projectClick(e) {
 	}
 
 	else{
+		description.html("<p>Stop Clicking on me! You just did it!")
 		description.fadeOut();
 	}
 }
