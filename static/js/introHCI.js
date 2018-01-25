@@ -20,6 +20,7 @@ function initializePage() {
 function projectClick(e) {
 	//prevent page from reloading
 	e.preventDefault();
+	$(this).css("background-color", "#7fff00");
 	//In an event handler, $(this) refers
 	//the object that triggered the even
 	var containingProject = $(this).closest(".project");
